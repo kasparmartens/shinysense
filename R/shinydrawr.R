@@ -53,7 +53,7 @@ shinydrawr <- function(input, output, session,
                        y_max = NA) {
 
   output$myDrawr <- renderDrawr_widget(
-    drawr_widget(data = data, draw_start = draw_start, x_key = x_key, y_key = y_key, y_min = y_min, y_max = y_max)
+    drawr_widget(data = data, draw_start = draw_start, raw_draw = raw_draw, x_key = x_key, y_key = y_key, y_min = y_min, y_max = y_max)
   )
 
   result <- reactive({ input$myDrawr_drawnData })
